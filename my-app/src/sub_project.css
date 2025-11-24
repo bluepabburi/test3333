@@ -1,0 +1,96 @@
+
+.quickmenu {
+  position: relative;
+  min-height: 200vh;
+  background: radial-gradient(
+    40rem 30rem at 50% 50%,
+    #2b2b32 0%,
+    #17171c 45%,
+    #0c0c10 70%,
+    #000 100%
+  );
+  color: #fff;
+  overflow: hidden;
+  transform: scale(0.85);
+}
+
+.qm-item {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.qm-right {
+  flex-direction: row-reverse;
+}
+
+.qm-label {
+  font-size: clamp(28px, 4vw, 56px);
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.qm-icon-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.qm-icon {
+  width: clamp(80px, 8vw, 140px);
+  height: auto;
+}
+
+.qm-icon.qm-icon--award {
+  width: clamp(140px, 11vw, 200px);
+}
+
+.qm-cursor {
+  position: absolute;
+  width: clamp(24px, 2.5vw, 40px);
+  height: auto;
+  bottom: -10px;
+  right: -10px;
+  transform: rotate(-5deg);
+}
+
+.qm-cursor.qm--award {
+  top: 92px;
+  right: 1px;
+}
+
+.qm-pos-study {
+  top: 22%;
+  left: 18%;
+}
+.qm-pos-award {
+  gap: 10px;
+  top: 42%;
+  right: 16%;
+}
+.qm-pos-activity {
+  bottom: 18%;
+  left: 18%;
+}
+
+.qm-glow-study .qm-label,
+.qm-glow-award .qm-label,
+.qm-glow-activity .qm-label {
+  text-shadow: none;
+}
+
+.qm-glow-study .qm-label::first-letter {
+  color: #cffff4;
+  text-shadow: 0 0 6px rgba(0, 255, 224, 0.9), 0 0 18px rgba(0, 255, 224, 0.7),
+    0 0 32px rgba(0, 255, 224, 0.5);
+}
+.qm-glow-award .qm-label::first-letter {
+  color: #f1d1ff;
+  text-shadow: 0 0 6px rgb(226, 129, 255), 0 0 18px rgb(193, 75, 185),
+    0 0 32px rgba(197, 86, 149, 0.5);
+}
+.qm-glow-activity .qm-label::first-letter {
+  color: #fffed2;
+  text-shadow: 0 0 6px rgb(255, 245, 129), 0 0 18px rgb(227, 230, 65),
+    0 0 32px rgba(231, 231, 61, 0.5);
+}

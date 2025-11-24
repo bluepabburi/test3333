@@ -1,0 +1,136 @@
+/* 전체 페이지 래퍼 */
+.apply-wrapper {
+  min-height: calc(100vh - 80px);
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+/* 가운데 폼 박스 */
+.apply-container {
+  width: 90%;
+  max-width: 700px;
+}
+
+/* 상단 제목 */
+.apply-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apply-row {
+  display: flex;
+  gap: 32px;
+}
+
+.apply-row.single {
+  flex-direction: column;
+}
+
+/* 개별 필드 박스 */
+.apply-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* 라벨 텍스트 */
+.apply-field label {
+  font-size: 0.9rem;
+  color: #e5e5e5;
+}
+
+/* 공통스타일 */
+.apply-field input {
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+  background-color: #dcdcdc;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.apply-field input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+/* 질문 블럭(Q1, Q2) */
+.apply-question-block {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.question-label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.apply-question-block textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 12px;
+  resize: vertical;
+  background-color: #dcdcdc;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.apply-question-block textarea:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+/* 제출 버튼 */
+.apply-submit-wrapper {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.apply-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #bfbfbf;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.apply-submit-check {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #00c853;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.apply-submit-btn:hover {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  transform: translateY(-1px);
+}

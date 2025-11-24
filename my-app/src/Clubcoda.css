@@ -1,0 +1,50 @@
+/*todo sub_main이랑 컴포넌트 높이 차이 줄여야됨*/
+
+.ClubCoda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150vh;
+  background-color: #000;
+  color: white;
+  padding: 0 5vw;
+  box-sizing: border-box;
+}
+
+/* 왼쪽 로고 영역 */
+.ClubCoda__left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ClubCoda__logo {
+  width: clamp(220px, 30vw, 320px);
+  height: auto;
+}
+
+/* 오른쪽 텍스트 영역 */
+.ClubCoda__right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3vw;
+}
+
+.ClubCoda__desc {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  line-height: 1.6;
+  color: #ffffff;
+  max-width: 450px;
+}
+.ClubCodaDescEng {
+  font-size: 150%;
+}
+.ClubCoda__desc strong {
+  font-weight: 700;
+  font-size: 1.1em;
+  display: inline-block;
+  margin-bottom: -0.5rem;
+}

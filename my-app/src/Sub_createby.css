@@ -1,0 +1,155 @@
+/*TODO glow효과 글자 중앙에 작성*/
+
+
+/* 전체 컨테이너 스타일 */
+.createbyContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    /*margin -> padding변경*/
+    padding-right: 100px ;
+    padding-left: 250px ;
+    transform:scale(0.8);
+
+
+}
+
+
+/* 타이틀 스타일 */
+.createbyTitle {
+    /*inconsolata*/
+    position: relative;
+    font-family: 'Inconsolata', 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    color: #ffffff;
+    left: 0px;
+
+}
+
+.imgRapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    align-self: center;
+}
+
+
+.yellowkeycap {
+    position: absolute;
+    margin: auto;
+    transform: scale(0.8);
+    z-index: 1;
+    left: 350px;
+    top: -5px;
+    text-shadow: 0 0 100px #FFEA00, 0 0 500px #FFEA00;
+
+}
+/*게임 컨테이너안에 cube, switch보관*/
+.gameContainer {
+
+    display: flex;
+    align-items: center;
+    margin-left: -100px;
+    margin-top: 350px;
+}
+.cube {
+     position: relative;
+     top: 50px;
+    z-index: 0;
+
+ }
+
+.switch {
+    margin-left: -130px;
+    z-index: 1;
+}
+
+.sword {
+    position: absolute;
+    top: -70px;
+    left: -330px;
+
+    z-index: 2;
+}
+
+/* 키캡 그리드 */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2개 열 */
+    align-self: center;
+
+}
+
+/* 개별 키캡 */
+    .keycap {
+    position: relative; /* 텍스트 위에 올리기 위해 사용 */
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 키캡 이미지 */
+.keycapImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* 키캡 안 텍스트 */
+.keycapText {
+    position: relative; /* 이미지 위에 텍스트 표시 */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 이름 */
+.name {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px; /* 이미지에 맞게 크기 조정 */
+    color: #ffffff;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+}
+
+/* 역할(part) */
+.part {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 1000;
+    font-size: 28px; /* 이미지에 맞게 크기 조정 */
+    letter-spacing: 0.01em;
+
+    margin: 0;
+}
+
+/* part에 따른 색상변경 */
+.part.backend {
+    color: #DC9BFF;
+    stroke: #DC9BFF;
+    stroke-width: 1px;
+    text-shadow: 0 0 100px #DC9BFF, 0 0 500px #DC9BFF;
+}
+
+.part.frontend {
+    color: #86FF06;
+    stroke: #86FF06;
+    stroke-width: 1px;
+    text-shadow: 0 0 100px #86FF06, 0 0 500px #86FF06;
+
+}

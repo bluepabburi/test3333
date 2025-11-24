@@ -1,0 +1,66 @@
+/*fonts*/
+.noto-sans-menu {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100
+}
+/*navbar.js 구조
+(div)navbar - (div)navberContainer - (div)navbar_logo
+                                   - (ul)navbar_menu
+
+
+*/
+
+.navberContainer {
+    max-width: 1320px;
+    max-height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 29px;
+    padding-right: 65px;
+    position: fixed;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+
+    background: rgba(13, 15, 17, 0.6); /* #0D0F11 -> rgba */
+    backdrop-filter: blur(15px);
+
+    filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.5));
+
+    border: 2px solid rgba(45, 47, 49);
+    /*최상단에 배치*/
+    z-index: 100;
+
+}
+
+.navbar_menu,
+.navbar_login {
+
+    list-style: none;
+    /*dot 제거*/
+}
+
+.navbar_menu a,
+.navbar_login a {
+    flex-basis: auto;
+    color : #F1F1F170;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.navbar_menu a:hover,
+.navbar_login a:hover{
+    color: #8B9E7E;
+}
+
+li {
+    padding: 30px;
+    float: left;
+}

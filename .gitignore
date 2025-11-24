@@ -1,0 +1,16 @@
+﻿node_modules/
+dist/
+build/
+coverage/
+.env
+.DS_Store
+node_modules/
+dist/
+build/
+coverage/
+.env
+.DS_Store
+
+# ai
+CLAUDE.md
+.claude

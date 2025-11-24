@@ -1,0 +1,62 @@
+/*임시 css코드*/
+/* 전체 페이지를 감싸는 컨테이너 스타일 */
+
+
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.loginForm {
+    flex-direction: column;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px; /* 모서리를 둥글게 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    width: 100%;
+    max-width: 400px; /* 폼의 최대 너비 설정 */
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+}
+
+/* input 필드 공통 스타일 (아이디, 비밀번호) */
+.loginForm input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    margin-bottom: 20px; /* 각 input 아래에 여백 추가 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* 테두리 색상 변화에 애니메이션 효과 */
+}
+
+/* input 필드 포커스 시 스타일 */
+.loginForm input:focus {
+    outline: none; /* 기본 아웃라인 제거 */
+    border-color: #007bff; /* 파란색 테두리로 강조 */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* 로그인 버튼 스타일 */
+.loginBtn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* 기본 파란색 배경 */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer; /* 마우스 오버 시 포인터 모양으로 변경 */
+    transition: background-color 0.3s; /* 배경색 변화에 애니메이션 효과 */
+}
+
+/* 로그인 버튼 마우스 오버 시 스타일 */
+.loginBtn:hover {
+    background-color: #0056b3; /* 더 진한 파란색으로 변경 */
+}

@@ -1,0 +1,68 @@
+{
+  
+  "name": "jinro",
+  
+  "version": "1.0.0",
+  
+  "type": "module",
+  
+  "scripts": {
+  
+    
+  "dev": "node ./src/server.js",
+  
+    
+  "start": "node ./src/server.js",
+  
+    
+  "seed": "node ./scripts/seed-pool.js",
+  
+    
+  "seed:admin": "node ./scripts/seed-admin.js"
+  
+  },
+  
+  "dependencies": {
+  
+    
+  "bcryptjs": "^3.0.2",
+  
+    
+  "cors": "^2.8.5",
+  
+    
+  "dotenv": "^16.6.1",
+  
+    
+  "express": "^5.1.0",
+  
+    
+  "jsonwebtoken": "^9.0.2",
+  
+    
+  "mongodb": "^6.19.0",
+  
+    
+  "mongoose": "^8.17.1",
+  
+    
+  "morgan": "^1.10.1",
+  
+    
+  "multer": "^2.0.2",
+  
+    
+  "zod": "^4.1.11"
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "swagger-jsdoc": "^6.2.8",
+  
+    
+  "swagger-ui-express": "^5.0.1"
+  
+  }
+}
