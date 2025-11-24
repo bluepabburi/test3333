@@ -11,7 +11,7 @@ export default function SubContact() {
     const [email, setEmail] = useState('')
     const baseURL = process.env.REACT_APP_API_URL;
     const geminiKey = process.env.REACT_APP_GEMINI_API_KEY;
-    const ai = new GoogleGenAI({apiKey: geminiKey});
+    // const ai = new GoogleGenAI({apiKey: geminiKey});
 
 
     function changeMessage(e){
