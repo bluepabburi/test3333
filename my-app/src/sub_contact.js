@@ -2,7 +2,7 @@ import React from "react";
 import {useState, } from "react";
 import contatcdot from './img/contact-dot.svg'
 import axios from "axios";
-import { GoogleGenAI } from "@google/genai";
+//import { GoogleGenAI } from "@google/genai";
 import './sub_contact.css'
 
 export default function SubContact() {
@@ -51,25 +51,25 @@ export default function SubContact() {
     }
 
     // todo gemini api연결하기
-    const getSubject = async (t) => {
-        const geminiText = t;
-        try {
-            const response = async () => {
-                    const model = await ai.models.generateContent(
-                        {model:"gemini-2.5-flash",
-                            contents: geminiText,
-                            config:{ systemInstruction:'글을 읽고 적절한 제목을 10자 이내로 제목만 출력해주세요'}
-                        });
+    // const getSubject = async (t) => {
+    //     const geminiText = t;
+    //     try {
+    //         const response = async () => {
+    //                 const model = await ai.models.generateContent(
+    //                     {model:"gemini-2.5-flash",
+    //                         contents: geminiText,
+    //                         config:{ systemInstruction:'글을 읽고 적절한 제목을 10자 이내로 제목만 출력해주세요'}
+    //                     });
 
-            }
-            console.log(response.text)
-            return response.text;
-        }
-        catch (error) {
-            console.log(error)
+    //         }
+    //         console.log(response.text)
+    //         return response.text;
+    //     }
+    //     catch (error) {
+    //         console.log(error)
 
-        }
-    }
+    //     }
+    // }
   return (
     <div className="subContactContainer">
         {/* DIV1 - 문의 섹션 */}
