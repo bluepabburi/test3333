@@ -43,7 +43,7 @@ function App() {
 
     // 주소값 변경시 or isAdmin변경시 작동됨
     useEffect(() => {
-      if (userLocation == "/admin*") {
+      if (userLocation === "/admin*") {
         setisAdmin(true);
       } else {
         setisAdmin(false);
