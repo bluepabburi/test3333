@@ -1,7 +1,8 @@
-/*todo clubcoda랑 컴포넌트 높이 차이 줄여야됨*/
+/*todo clubcoda랑 컴포넌트 높이 차이 줄여야됨(완료)*/
 
 /* 공통 */
 .submain {
+  min-height: calc(100vh - 80px);
   width: 100%;
   overflow-x: hidden;
 }

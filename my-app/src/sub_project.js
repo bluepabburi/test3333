@@ -23,7 +23,7 @@ export default function SubProject() {
         </div></Link>
         <span className="qm-label">Study</span>
 
-      </div>
+      </div>2
 
       {/* award 영역 (아이콘 오른쪽) */}
       <div className="qm-item qm-pos-award qm-glow-award qm-right">
